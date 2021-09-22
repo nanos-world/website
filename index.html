@@ -2,21 +2,305 @@
 	<head>
 		<!-- headers -->
 		<meta charset="utf-8">
-		<link rel="icon" href="favicon.ico">
+		<link rel="icon" href="img/favicon.ico">
 		<title>nanos world - next-generation open world multiplayer sandbox game</title>
 
-		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" >
+		<link rel="stylesheet" type="text/css" href="css/aos.css" >
+
+		<!-- js -->
+		<script src="js/aos.js"></script>
+		<script src="js/particles.min.js"></script>
+		<script src="js/img_box.js"></script>
+		<script src="js/index.js"></script>
+
+		<!-- plausible (privacy-free analytics) -->
 		<script async defer data-domain="nanos.world" src="https://pac.nanos.io/js/script.js"></script>
 	</head>
-	<body style="background-image: url('wut.jpg'); background-size: 100%; padding: 0; margin: 0;">
-		<iframe id="video" src="//www.youtube.com/embed/YAmfaU3H5eQ?rel=0&autoplay=1" frameborder="0" allowfullscreen style="position: absolute; width: 100%; height: 100%;"></iframe>
-		<!-- <span style="position: absolute; top: 40%; left: 50%; font-size: 96px; transform: translate(-50%); font-family: 'Righteous', cursive; width: 100%; color: white; text-align: center; user-select: none;">
-			something amazing is coming
-			<br>
-			<span style="font-size: 24px; ">
-				soon™ 😎
-			</span>
-		</span> -->
+	<body>
+		<div id="hero">
+			<div id="hero-brands">
+				<p class="brand" data-aos="fade-left">nanos world</p>
+				<p class="sub-brand" data-aos="fade-right">next-generation open world multiplayer sandbox game</p>
+			</div>
+		</div>
+		<div id="main">
+			<div id="trailer" data-aos="fade-up">
+				<iframe width="900" height="505" src="https://www.youtube-nocookie.com/embed/YAmfaU3H5eQ?vq=hd1080&modestbranding=1&showinfo=0&rel=0" title="YouTube video player" frameborder="0" allowfullscreen loading="lazy"></iframe>
+			</div>
+			<div id="available-now" data-aos="zoom-in">
+				<h1>WISHLIST NOW ON STEAM</h1>
+				<br>
+				<iframe src="https://store.steampowered.com/widget/1686450/" frameborder="0" width="646" height="190" loading="lazy"></iframe>
+			</div>
+			<div id="description">
+				<h1 data-aos="fade-up">
+					nanos world is the next generation multiplayer sandbox game created by you and nanos 🔥
+				</h1>
+				<div id="descriptions">
+					<div id="description-left" data-aos="fade-up-right">
+						<p>There are a lot of gamers who have a game idea, but cannot realize it due to their limited knowledge and the high complexity of game development.</p>
+						<p>Using the power of <strong>Lua</strong> scripting and <strong>Unreal Engine 4</strong> (<strong>5</strong> soon™), <strong>nanos world</strong> allows it's creators to materialize their own game ideas and visions!</p>
+						<p>Check out our <strong>roadmap</strong> to see all our upcoming features and plans! 📅</p>
+						<a href="https://roadmap.nanos.world" class="label-link">ROADMAP</a>
+					</div>
+					<div id="description-right" data-aos="fade-up-left" data-aos-delay="200">
+						<p>We expose an easy yet powerful scripting API including a modern gameplay framework, leaving just the creative part to you! Suitable for both beginning and advanced programmers!</p>
+						<p>We ❤️ <strong>developers</strong>, <strong>multiplayer</strong> and great <strong>performance</strong>! We do it for love!</p>
+						<p>Dive deep into our <strong>documentation</strong> and start your own server in less than 10 minutes!</p>
+						<a href="https://docs.nanos.world" class="label-link">DOCUMENTATION</a>
+					</div>
+				</div>
+			</div>
+			<div id="screenshots">
+				<img src="img/screenshots/screenshot-13.jpg" class="zoomable" data-aos="zoom-in-right" data-aos-delay="0">
+				<img src="img/screenshots/screenshot-05.jpg" class="zoomable" data-aos="zoom-in-left" data-aos-delay="100">
+				<img src="img/screenshots/screenshot-02.jpg" class="zoomable" data-aos="zoom-in-right" data-aos-delay="100">
+				<img src="img/screenshots/screenshot-12.jpg" class="zoomable" data-aos="zoom-in-left" data-aos-delay="200">
+			</div>
+			<div id="screenshots-small">
+				<img src="img/screenshots/screenshot-04.jpg" class="zoomable" data-aos="zoom-in-right" data-aos-delay="200">
+				<img src="img/screenshots/screenshot-06.jpg" class="zoomable" data-aos="zoom-in-right" data-aos-delay="200">
+				<img src="img/screenshots/screenshot-07.jpg" class="zoomable" data-aos="zoom-in-left" data-aos-delay="300">
+				<img src="img/screenshots/screenshot-08.jpg" class="zoomable" data-aos="zoom-in-left" data-aos-delay="300">
+				<img src="img/screenshots/screenshot-09.jpg" class="zoomable" data-aos="zoom-in-right" data-aos-delay="300">
+				<img src="img/screenshots/screenshot-10.jpg" class="zoomable" data-aos="zoom-in-right" data-aos-delay="300">
+				<img src="img/screenshots/screenshot-11.jpg" class="zoomable" data-aos="zoom-in-left" data-aos-delay="400">
+				<img src="img/screenshots/screenshot-03.jpg" class="zoomable" data-aos="zoom-in-left" data-aos-delay="400">
+			</div>
+			<div id="features">
+				<h1 data-aos="zoom-in">the full sandbox experience, done right 😉</h1>
+				<div class="feature feature-left">
+					<h2>🚀 fast and reliable dedicated server</h2>
+					<p>
+						With less than 50MB of RAM and 1 Core is enough to <a href="https://docs.nanos.world/core-concepts/server-manual/server-installation">start your server</a>! Our barebone is developed at low-level always having performance as top priority.
+					</p>
+				</div>
+				<img class="feature zoomable" src="img/features/server.png">
+				<img class="feature zoomable" src="img/features/easy.jpg">
+				<div class="feature feature-right">
+					<h2>easy scripting & modding 🐣</h2>
+					<p>
+						Our Scripting API is intended to be as simple as possible, we use the <strong>OOP Model</strong> and <strong>Events</strong> to expose all gameplay functionality!
+					</p>
+					<p>
+						Spawn a Prop on the map with a single Lua line! Check it out in our <a href="https://docs.nanos.world/getting-started/quick-start">Getting Started</a> guide!
+					</p>
+				</div>
+				<div class="feature feature-left">
+					<h2>🛍️ built-in workshop & marketplace</h2>
+					<p>
+						Use our <strong>workshop</strong> to share, download and monetize¹ the content you've created!
+					</p>
+					<p>
+						Easily <strong>publish</strong> and <strong>download</strong> tons of new <i>addons</i> for your server! 😘
+					</p>
+				</div>
+				<img class="feature zoomable" src="img/features/vault.jpg">
+				<div id="feature-updates" class="feature">
+					<img class="zoomable" src="img/updates/halloween.jpg">
+					<img class="zoomable" src="img/updates/sandbox.jpg">
+					<img class="zoomable" src="img/updates/transformers.jpg">
+					<img class="zoomable" src="img/updates/vault.jpg">
+					<img class="zoomable" src="img/updates/water.jpg">
+					<img class="zoomable" src="img/updates/devastation.jpg">
+				</div>
+				<div class="feature feature-right">
+					<h2>active development and support 👨🏻‍💻</h2>
+					<p>
+						We love our community! We take your opinions and feedbacks very seriously! Come directly talk to us in our <a href="https://discord.gg/MtzCJ2jSmr">Discord</a>!
+					</p>
+					<p>
+						All <strong>bugs</strong> & <strong>suggestions</strong> reported in our <a href="https://issue.nanos.world">Issue Tracker</a> are thoroughly analysed!
+					</p>
+				</div>
+				<div class="feature feature-left">
+					<h2>🗺️ really big maps</h2>
+					<p>
+						There is no upper limits in nanos world, we have the mindset that this must be scalable in all respects. Everything is designed to be as efficient as possible.
+					</p>
+					<p>
+						There is no hard limitation for <strong>map sizes</strong>, <strong>props count</strong> or even <strong>players</strong>! It supports as many as the hardware can handle! 1024 players servers allowed! 🔝
+					</p>
+				</div>
+				<img class="feature zoomable" src="img/features/pug.jpg">
+				<img class="feature zoomable" src="img/features/customization.jpg">
+				<div class="feature feature-right">
+					<h2>fully customizable 🚂</h2>
+					<p>
+						We expose several functions to allow customizing the <strong>meshes</strong>, <strong>props</strong> and everything around you at runtime! Load <strong>images</strong> from disk or even <strong>sounds</strong> and use them directly, without the need to compile beforehand on Unreal Engine!
+					</p>
+					<p>
+						It is even possible to load a <strong>WebUI</strong> as texture into any 3D surface or as masks for <strong>Lights</strong> - it works in real time! 
+					</p>
+				</div>
+			</div>
+			<div id="hidden-features-container">
+				<div id="hidden-features">
+					<div class="feature feature-left">
+						<h2>🧱 import unreal engine assets</h2>
+						<p>
+							Easily import any Unreal Engine content with the help of our handy <a href="https://docs.nanos.world/assets-modding/creating-assets">Assets Development Kit</a>.
+						</p>
+						<p>
+							From custom <strong>Maps</strong>, <strong>Static Meshes</strong> for Props, <strong>Meshes</strong> for Characters, Weapons and Vehicles, and even UE4's <a href="https://twitter.com/nanos_world/status/1384883218890035200">Standalone Games</a> into nanos world!
+						</p>
+					</div>
+					<img class="feature zoomable" src="img/features/estacao-liberdade.jpg">
+					<img class="feature zoomable" src="img/features/linux.jpg">
+					<div class="feature feature-right">
+						<h2>actively tested in proton 🐧</h2>
+						<p>
+							We 🖤 Linux! nanos world is continually tested in <a href="https://www.protondb.com/">Proton</a> to ensure everything runs perfect for Linux gaming!
+						</p>
+						<p>
+							No incompatibilities allowed! No special tweaks! Just click and play!
+						</p>
+					</div>
+					<div class="feature feature-left">
+						<h2>💨 entirely steam integrated</h2>
+						<p>
+							We put all our efforts to make the best experience possible for players! Expect <strong>Achievements</strong>, customizable <strong>Rich Presence</strong>, <strong>Steam Servers</strong>, and everything you may want from <a href="https://partner.steamgames.com/doc/sdk">Steam SDK</a>.
+						</p>
+						<p>
+							Also we are constantly adding more integrations to improve the player's experience and add new ways to scripters make use of that!
+						</p>
+					</div>
+					<img class="feature zoomable" src="img/features/valve-guy.jpg">
+					<img class="feature zoomable" src="img/features/love.jpg">
+					<div class="feature feature-right">
+						<h2>we love our community 💑</h2>
+						<p>
+							We actively work to maintain a healthy environment in our community! All members are part of our <strong>family</strong> for us!
+						</p>
+						<p>
+							We know how important it is to have an active, partnering community. No toxicity allowed!
+						</p>
+					</div>
+					<div class="feature feature-left">
+						<h2>🌊 dynamic water physics</h2>
+						<p>
+							nanos world integrates seamlessly the new <a href="https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Water/">Unreal Water System</a> into the game.
+						</p>
+						<p>
+							All entities, including <strong>Characters, Props</strong> and even <strong>Vehicles</strong> floats automatically, and even flows on the river! To make use of that, just spawn a <strong>Water Actor</strong> into your map! No more action is needed!
+						</p>
+					</div>
+					<img class="feature zoomable" src="img/features/water.jpg">
+					<img class="feature zoomable" src="img/features/time-dynamic.jpg">
+					<div class="feature feature-right">
+						<h2>built-in day/night cycle 🌞🌚</h2>
+						<p>
+							With the dynamic day/night cycle, you can really give life to your game-modes!
+						</p>
+						<p>
+							nanos world exposes a built-in Sun with tons of customizations to allow you to tweak everything on the environment with few <a href="https://docs.nanos.world/scripting-reference/static-classes/world">Lua functions</a>.
+						</p>
+					</div>
+					<div class="feature feature-left">
+						<h2>🎈 balloons + physics = 100% fun</h2>
+						<p>
+							Playing in the <a href="https://github.com/nanos-world/nanos-world-sandbox">Official Sandbox</a> game-mode is surely fun! But enjoying the balloons surpass any expectation!
+						</p>
+						<p>
+							Using all the power of Unreal Engine physics we can create all kinds of interactions, including very funny <strong>Balloons</strong> and <strong>Thrusters</strong>!
+						</p>
+					</div>
+					<img class="feature zoomable" src="img/features/balloons.jpg">
+					<img class="feature zoomable" src="img/features/ultralight.jpg">
+					<div class="feature feature-right">
+						<h2>web-ui user interface 🌐</h2>
+						<p>
+							With nanos world you can create your game interface easily using <strong>HTML, CSS</strong> and <strong>JS</strong>.
+						</p>
+						<p>
+							We've integrated all the power and speed of <a href="https://ultralig.ht/">Ultralight</a> library into nanos world allowing easy and fast interop between <strong>Lua</strong> and <strong>UI</strong> layers!
+						</p>
+					</div>
+					<div class="feature feature-left">
+						<h2>🎯 procedural ADS aiming</h2>
+						<p>
+							The whole aiming system uses procedural and dynamic animations! You can configure your own <a href="https://docs.nanos.world/scripting-reference/classes/weapon">Weapon</a> using imported Meshes and just set where is the Sight location.
+						</p>
+						<p>
+							Everything else is procedurally calculated to give the highest level of immersion possible!
+						</p>
+					</div>
+					<img class="feature zoomable" src="img/features/procedural-aiming.jpg">
+					<img class="feature zoomable" src="img/features/ai.jpg">
+					<div class="feature feature-right">
+						<h2>AI 🤖</h2>
+						<p>
+							You will never be alone with nanos world <a href="https://docs.nanos.world/core-concepts/scripting/artificial-intelligence">Artificial Intelligence</a>! Easily give life to your packages!
+						</p>
+						<p><strong>Nav Mesh/Path Finding</strong> included! Bots can dynamically find how to move to a spot, shoot at some point and even interact with the environment!</p>
+					</div>
+					<div class="feature feature-left">
+						<h2>💡 endless possibilities</h2>
+						<p>
+							<a href="https://docs.nanos.world/scripting-reference/classes/prop">Props</a>, <a href="https://docs.nanos.world/scripting-reference/classes/character">Characters</a>, <a href="https://docs.nanos.world/scripting-reference/classes/weapon">Weapons</a>, <a href="https://docs.nanos.world/scripting-reference/classes/vehicle">Vehicles</a>, <a href="https://docs.nanos.world/scripting-reference/classes/cable">Cables</a>, <a href="https://docs.nanos.world/scripting-reference/classes/light">Lights</a>, <a href="https://docs.nanos.world/scripting-reference/classes/particle">Particles</a>, <a href="https://docs.nanos.world/scripting-reference/classes/billboard">Billboards</a>, <a href="https://docs.nanos.world/scripting-reference/classes/sound">Sounds</a>, <a href="https://docs.nanos.world/scripting-reference/classes/decal">Decals</a> and much more...
+						</p>
+						<p>
+							There are more than <strong>15 unique game-play entities</strong> that can be used in your package! Check the complete list in our <a href="https://docs.nanos.world/scripting-reference/classes">docs</a>.
+						</p>
+					</div>
+					<img class="feature zoomable" src="img/features/tons.jpg">
+					<p class="disclaimer" data-aos="flip-up">
+						<i>¹monetizing is not yet available in the current game state.</i>
+					</p>
+				</div>
+			</div>
+			<div id="button-expand-div" data-aos="fade-down">
+				<button id="expand-hidden-features" class="label-link">
+					<img src="img/page/down-chevron.png"> DISCOVER MORE FEATURES <img src="img/page/down-chevron.png">
+				</button>
+			</div>
+			<div id="discord" class="clickable" data-aos="flip-left">
+				<a href="https://discord.gg/MtzCJ2jSmr" class="clickable">
+					<h1>join the <span class="label-blue">closed alpha</span> now in our</h1>
+					<img src="img/page/discord.png">
+				</a>
+			</div>
+			<div id="social-medias" data-aos="fade-up">
+				<h1>stay tuned</h1>
+				<a href="https://discord.gg/MtzCJ2jSmr"><img src="img/social/discord.png" title="discord" class="clickable"></a>
+				<a href="https://store.steampowered.com/app/1686450/nanos_world/"><img src="img/social/steam.png" title="steam" class="clickable"></a>
+				<a href="https://trello.com/b/AYFCBxUz/nanos-world-roadmap"><img src="img/social/trello.png" title="roadmap" class="clickable"></a>
+				<a href="https://github.com/nanos-world"><img src="img/social/github.png" title="github" class="clickable"></a>
+				<a href="https://twitter.com/nanos_world"><img src="img/social/twitter.png" title="twitter" class="clickable"></a>
+				<a href="https://www.youtube.com/channel/UCahlLMg9S1gMKAQ1g3fHF9g"><img src="img/social/youtube.png" title="youtube" class="clickable"></a>
+				<a href="https://www.instagram.com/nanosworld"><img src="img/social/instagram.png" title="instagram" class="clickable"></a>
+				<a href="https://www.twitch.tv/nanosworld"><img src="img/social/twitch.png" title="twitch" class="clickable"></a>
+			</div>
+			<div id="tweet-label" data-aos="zoom-in">
+				<h1>we've got featured 🎉</h1>
+			</div>
+			<div id="tweet" data-aos="flip-up">
+				<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Want a chance to show off your skills? <a href="https://twitter.com/hashtag/ScreenshotSaturday?src=hash&amp;ref_src=twsrc%5Etfw">#ScreenshotSaturday</a> is the perfect opportunity to share your project with the <a href="https://twitter.com/hashtag/UE4?src=hash&amp;ref_src=twsrc%5Etfw">#UE4</a> community.<br><br>Water-you 🌊 waiting for? Make a splash and post below!<br><br>🚚 <a href="https://twitter.com/gtnardy?ref_src=twsrc%5Etfw">@gtnardy</a> <a href="https://t.co/UJaNcXZ6vY">pic.twitter.com/UJaNcXZ6vY</a></p>&mdash; Unreal Engine (@UnrealEngine) <a href="https://twitter.com/UnrealEngine/status/1350451837804154881?ref_src=twsrc%5Etfw">January 16, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+			</div>
+			<div id="extra" data-aos="zoom-out">
+				<a href="https://issues.nanos.world" class="extra-left-button label-link">BUGS & SUGGESTIONS</a>
+				<img src="img/logos/nanos-world.png">
+				<a href="https://auth.nanos.io" class="extra-right-button label-link">NANOS ACCOUNT</a>
+			</div>
+			<div id="footer">
+				<p data-aos="zoom-out">
+					© copyright nanos GbR - all rights reserved<br>
+					website made with 💚 by <a href="https://twitter.com/gtnardy">@gtnardy 🇧🇷</a>
+				</p>
+				<div id="brandings">
+					<img src="img/logos/steam.png" data-aos="fade-up-right" data-aos-offset="-100">
+					<img src="img/logos/unreal-engine.png" data-aos="fade-up" onclick="img_box('img/page/epic.jpg')" data-aos-offset="-100">
+					<a href="https://nanos.io">
+						<img src="img/logos/nanos-full.png" class="clickable" data-aos="fade-up" data-aos-offset="-100">
+					</a>
+					<img src="img/logos/gabe.png" title="gabe approves" data-aos="fade-up" onclick="img_box('img/page/gabe.jpg')" data-aos-offset="-100">
+					<a href="https://store.steampowered.com/app/619910/Just_Cause_3_Multiplayer_Mod/">
+						<img src="img/page/jc3.png" class="clickable" data-aos="fade-up-left" data-aos-offset="-100">
+					</a>
+				</div>
+			</div>
+		</div>
 	</body>
-	<!-- You won't find anything here 😜 (hmmmm 🤔) -->
 </html>

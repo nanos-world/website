@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Gothic+A1|Righteous");
+
+@media screen and (max-width: 600px) {
+	.brand {
+		font-size: 128px;
+	}
+
+	.sub-brand {
+		font-size: 48px;
+	}
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* variables */
+:root {
+	--bg-color: #031520;
+}
+
+body {
+	background-color: var(--bg-color);
+	background-size: 10%;
+	color: #ddd6cf;
+	font-family: "Gothic A1", sans-serif;
+	overflow: auto;
+}
+
+#hero {
+	background: url("../img/page/bg.jpg");
+	background: linear-gradient(to bottom, transparent 60%, var(--bg-color)), url("../img/page/bg.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+
+#hero-brands {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	font-size: 128px;
+	transform: translate(-50%);
+	text-shadow: 1px 1px black;
+	text-align: center;
+	pointer-events: none;
+}
+
+#hero p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.brand {
+	font-family: "Poiret One";
+}
+
+.sub-brand {
+	font-size: 24px;
+	font-family: Gothic A1;
+}
+
+#main div {
+	margin: 0 auto;
+	padding: 50px 0;
+	width: 900px;
+	text-align: center;
+}
+
+div#description div#descriptions {
+	font-size: 18px;
+	width: 100%;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+div#description div#descriptions div {
+	width: 325px;
+	padding: 0;
+	margin: 0;
+}
+
+div#description {
+	width: 700px;
+}
+
+div#main {
+	background: url("../img/page/world-mask.png"), linear-gradient(to bottom, var(--bg-color) 85%, transparent 100%), url("../img/page/sand.png");
+	overflow: auto;
+	margin-top: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #51c453;
+}
+
+a:hover {
+	color: #8af58c;
+}
+
+p {
+	text-align: justify;
+}
+
+#footer p, .brand p {
+	text-align: center;
+}
+
+p.disclaimer {
+	text-align: right;
+}
+
+h1, h2, h3, p {
+	margin: 0 0 30px 0;
+	width: 100%;
+}
+
+h1, h2, h3 {
+	line-height: 40px;
+	font-family: Poiret One;
+	color: #fff;
+}
+
+#available-now h1 {
+	font-weight: 100;
+	letter-spacing: 2px;
+}
+
+#screenshots {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 0 !important;
+}
+
+#screenshots img {
+	width: 425px;
+	display: inline-block;
+	margin: 25px 0;
+}
+
+#screenshots-small {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 0 !important;
+}
+
+#screenshots-small img {
+	width: 195px;
+	display: inline-block;
+	margin: 20px 0;
+}
+
+#button-expand-div {
+	padding: 0 !important;
+}
+
+#expand-hidden-features {
+	position: absolute;
+	transform: translate(-50%);
+    left: 50%;
+	width: 900px;
+	transition: 0.1s ease-in-out;
+	height: 25px;
+	background-color: #209ee6;
+}
+
+#expand-hidden-features:hover {
+	height: 50px;
+	scale: 1 !important;
+	background-color: #6ac9ff;
+}
+
+#hidden-features-container {
+	overflow: hidden;
+	width: 100% !important;
+	transition: max-height 1s, opacity 1s ease-out;
+	max-height: 0;
+	opacity: 0;
+	padding: 0 !important;
+}
+
+#hidden-features-container.visible {
+	max-height: 5000px;
+	opacity: 1;
+}
+
+#features, #hidden-features {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+}
+
+#hidden-features {
+	padding: 0 !important;
+}
+
+#features {
+	padding-bottom: 0 !important;
+}
+
+#features h1, #hidden-features h1 {
+	text-align: center;
+}
+
+#feature-updates {
+	height: 200px;
+}
+
+#feature-updates img {
+	height: 150px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.feature {
+	width: 425px !important;
+	height: 100%;
+	display: inline-block;
+	margin: 40px 0 !important;
+	padding: 0 !important;
+}
+
+.feature-left {
+	text-align: right !important;
+}
+
+.feature-right {
+	text-align: left !important;
+}
+
+#extra {
+	display: flex;
+	justify-content: center;
+}
+
+#extra img {
+	width: 64px;
+}
+
+#extra .label-link {
+	margin: 20px;
+}
+
+.label-link {
+	text-align: center;
+	width: 100%;
+	background-color: #51c453;
+	color: #031520 !important;
+	height: 25px;
+	display: inline-block;
+	line-height: 25px;
+	font-size: 18px;
+	margin: 20px 0;
+	font-family: "Righteous";
+	border: 0;
+	cursor: pointer;
+}
+
+.label-link:hover {
+	background-color: #8af58c;
+}
+
+.label-green {
+	color: #51c453;
+}
+
+.label-blue {
+	color: #209ee6;
+}
+
+div#discord {
+	/* width: 460px; */
+	padding: 0;
+	margin: 250px auto 200px;
+}
+
+#discord img {
+	width: 400px;
+}
+
+#discord h1 {
+	margin: 0;
+	font-size: 60px;
+	line-height: 80px;
+}
+
+#brandings img {
+	height: 50px;
+	padding: 0 20px;
+}
+
+#social-medias img {
+	height: 50px;
+	padding: 0 20px;
+}
+
+div#jc3 h3 {
+	padding: 0;
+	margin: 0 235px -20px 0;
+	width: auto;
+}
+
+#jc3 img {
+	width: 400px;
+}
+
+img.zoomable {
+	cursor: zoom-in;
+}
+
+img.zoomable:hover,
+.clickable:hover,
+.label-link:hover {
+	scale: 1.025 !important;
+	filter: drop-shadow(2px 2px 5px #00000052);
+}
+
+img {
+    user-select: none;
+}
+
+#img_box {
+	cursor: zoom-out !important;
+}
+
+div#tweet-label {
+	padding-bottom: 0 !important;
+	padding-top: 150px;
+}
+
+div#tweet {
+	padding-top: 0 !important;
+	min-height: 600px;
+}
