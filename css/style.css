@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Poiret+One|Gothic+A1|Righteous");
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1|Righteous|Rufing");
 
 @media screen and (max-width: 600px) {
 	.brand {
-		font-size: 128px;
+		font-size: 64px;
 	}
 
 	.sub-brand {
-		font-size: 48px;
+		width: 350px !important;
 	}
 }
 
@@ -28,10 +28,17 @@ body {
 	overflow: auto;
 }
 
-#hero {
-	background: url("../img/page/bg.jpg");
-	background: linear-gradient(to bottom, transparent 60%, var(--bg-color)), url("../img/page/bg.jpg");
+#hero-background {
+	background: linear-gradient(to bottom, transparent 80%, var(--bg-color));
 	height: 100%;
+	width: 100%;
+	position: absolute;
+	pointer-events: none;
+}
+
+#hero {
+	background: linear-gradient(135deg, #0051b6, #01e1fc);
+	height: 120%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -45,7 +52,7 @@ body {
 	left: 50%;
 	font-size: 128px;
 	transform: translate(-50%);
-	text-shadow: 1px 1px black;
+	text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px !important;
 	text-align: center;
 	pointer-events: none;
 }
@@ -57,12 +64,12 @@ body {
 }
 
 .brand {
-	font-family: "Poiret One";
+	font-family: "Rufing";
+	color: white;
 }
 
 .sub-brand {
-	font-size: 24px;
-	font-family: Gothic A1;
+	width: 690px;
 }
 
 #main div:not(#subscribe div) {
@@ -130,7 +137,7 @@ h1, h2, h3, p {
 
 h1, h2, h3 {
 	line-height: 40px;
-	font-family: Poiret One;
+	font-family: Rufing;
 	color: #fff;
 }
 

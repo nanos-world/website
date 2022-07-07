@@ -86,14 +86,14 @@ window.addEventListener("load", () => {
 					"nb_sides":5
 				},
 				"image":{
-					"src":"./img/logos/nanos-world-half.png",
+					"src":"./img/logos/world.png",
 					"width":100,
 					"height":100
 				}
 			},
 			"opacity":{
 				"value":0.5,
-				"random":false,
+				"random":true,
 				"anim":{
 					"enable":false,
 					"speed":1,
@@ -102,10 +102,10 @@ window.addEventListener("load", () => {
 				}
 			},
 			"size":{
-				"value":30,
+				"value":200,
 				"random":true,
 				"anim":{
-					"enable":false,
+					"enable":true,
 					"speed":40,
 					"size_min":0.1,
 					"sync":false
