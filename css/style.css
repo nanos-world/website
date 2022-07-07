@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Gothic+A1|Righteous");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Gothic+A1|Righteous");
 
 @media screen and (max-width: 600px) {
 	.brand {
@@ -135,7 +135,7 @@ h1, h2, h3, p {
 
 h1, h2, h3 {
 	line-height: 40px;
-	font-family: Rufing;
+	font-family: Poiret One;
 	color: #fff;
 }
 
