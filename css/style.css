@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Gothic+A1|Righteous");
-@import url('http://fonts.cdnfonts.com/css/rufing');
 
 @media screen and (max-width: 600px) {
 	.brand {
@@ -49,7 +48,7 @@ body {
 
 #hero-brands {
 	position: absolute;
-	top: 30%;
+	top: 25%;
 	left: 50%;
 	font-size: 128px;
 	transform: translate(-50%);
@@ -65,12 +64,10 @@ body {
 }
 
 .brand {
-	font-family: "Rufing";
-	color: white;
 }
 
 .sub-brand {
-	width: 690px;
+	width: 510px;
 }
 
 #main div:not(#subscribe div) {
