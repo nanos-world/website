@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Gothic+A1|Righteous|Rufing");
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1|Righteous");
+@import url('http://fonts.cdnfonts.com/css/rufing');
 
 @media screen and (max-width: 600px) {
 	.brand {
