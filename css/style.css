@@ -227,7 +227,7 @@ h1, h2, h3 {
 }
 
 #feature-updates img {
-	height: 150px;
+	height: 125px;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
