@@ -107,6 +107,12 @@ div#subscribe {
 	margin: 25px auto !important;
 }
 
+span#subscribe-fallback {
+	position: absolute;
+	transform: translate(-50%);
+	left: 50%;
+}
+
 a {
 	text-decoration: none;
 	color: #51c453;
