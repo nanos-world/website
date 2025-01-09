@@ -188,6 +188,7 @@ h1, h2, h3 {
 	transition: 0.1s ease-in-out;
 	height: 25px;
 	background-color: #209ee6;
+	border-radius: .2rem;
 }
 
 #expand-hidden-features:hover {
@@ -237,6 +238,11 @@ h1, h2, h3 {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	border-radius: .2rem;
+}
+
+img {
+	border-radius: .4rem;
 }
 
 .feature {
@@ -281,6 +287,7 @@ h1, h2, h3 {
 	font-family: "Righteous";
 	border: 0;
 	cursor: pointer;
+	border-radius: .2rem;
 }
 
 .label-link:hover {
