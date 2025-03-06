@@ -323,6 +323,12 @@ div#discord {
 	padding: 0 20px;
 }
 
+#roadmap {
+	margin-top: 100px !important;
+	margin-bottom: -50px !important;
+	width: 670px !important;
+}
+
 #social-medias {
 	margin-top: 150px !important;
 }
