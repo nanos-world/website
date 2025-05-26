@@ -86,7 +86,7 @@ window.addEventListener("load", () => {
 					"nb_sides":5
 				},
 				"image":{
-					"src":"./img/logos/world.png",
+					"src":"./img/logos/world.webp",
 					"width":100,
 					"height":100
 				}
